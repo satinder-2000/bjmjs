@@ -1,5 +1,8 @@
 package org.bjm.dto;
 
+import java.util.List;
+import org.bjm.model.State;
+
 /**
  *
  * @author singh
@@ -16,6 +19,8 @@ public class UserDto {
     private String stateCode;
     private String profileImage;
     private byte[] image;
+    private List<State> allStates;
+    private State state;
 
     public String getFirstname() {
         return firstname;
@@ -95,6 +100,22 @@ public class UserDto {
 
     public void setImage(byte[] image) {
         this.image = image;
+    }
+
+    public List<State> getAllStates() {
+        return allStates;
+    }
+
+    public void setAllStates(List<State> allStates) {
+        this.allStates = allStates;
+    }
+
+    public State getState() {
+        return state;
+    }
+
+    public void setState(State state) {
+        this.state = state;
     }
     
     
